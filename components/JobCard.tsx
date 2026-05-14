@@ -1,4 +1,6 @@
 // Тип вакансии как в db.json
+import Link from "next/link";
+
 type Job = {
   id: string;
   title: string;
@@ -71,19 +73,14 @@ export default function JobCard({ job }: { job: Job }) {
               {req}
             </span>
           ))}
-          {/* Если навыков больше 3, показываем +N more */}
-          {/* {moreCount > 0 && (
-            <span className="border border-slate-300 text-slate-500 text-xs px-3 py-1 rounded-md">
-              +{moreCount} more
-            </span>
-          )} */}
         </div>
       </div>
 
-      {/* Кнопка */}
-      <button className="w-full bg-[#0f3d7a] hover:bg-[#0c3263] text-white py-3 rounded-lg font-medium transition">
-        View Details
-      </button>
+      <Link href={`/jobs/${job.id}`}>
+        <button className="w-full bg-[#0f3d7a] hover:bg-[#0c3263] text-white py-3 rounded-lg font-medium transition">
+          View Details
+        </button>
+      </Link>
     </div>
   );
 }
