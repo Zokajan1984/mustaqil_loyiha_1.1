@@ -1,0 +1,14 @@
+{
+  "jobs": [
+    {
+      "id": "1",
+      "title": "Senior Frontend Engineer",
+      "company": "TechCorp",
+      "location": "Buxara",
+      "salary": "$120,000 - 160,000",
+      "category": "Technology",
+      "description": "We are looking for an experienced Frontend Engineer to join our growing team. You will work on modern web applications using React and TypeScript.",
+      "requirements": ["React", "TypeScript", "5+ years experience", "Node.js"]
+    }
+  ]
+}
